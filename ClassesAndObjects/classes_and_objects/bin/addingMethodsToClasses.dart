@@ -35,6 +35,8 @@ class Person {
    */
 
   int calculateTheAtualAge(yearBirthday, atualYear) => atualYear - yearBirthday;
+
+  calculate() => 43 * 5;
 }
 
 void main() {
@@ -42,4 +44,5 @@ void main() {
 
   print('your atual age is :${people.calculateTheAtualAge(1989, 2021)}');
   print('your name is :${people.name}');
+  print('result:${people.calculate()}');
 }
