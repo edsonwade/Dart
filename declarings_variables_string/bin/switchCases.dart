@@ -1,4 +1,4 @@
-main(List<String> arguments) {
+void main(List<String> arguments) {
   print(calculateUsingSwitchCase(4.0, 2.0, 4));
 }
 

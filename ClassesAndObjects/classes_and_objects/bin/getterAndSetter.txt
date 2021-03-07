@@ -1,0 +1,28 @@
+
+// construtor passed arguments
+  Person(String id_Person, String name, String address, String code_postal,
+      String birth, int age) {
+    this.id_Person = id_Person;
+    this.name = name;
+    this.address = address;
+    this.code_postal = code_postal;
+    this.birth = birth;
+    this.age = age;
+  }
+
+  
+
+  /**
+   * find  the atual  age of the person and return.
+   */
+
+  int calculateTheAtualAge(yearBirthday, atualYear) => atualYear - yearBirthday;
+}
+
+void main(List<String> arguments) {
+  var pessoa = new Person(
+      '1', 'John Smit', 'john@contoso.com', '123456', '1989-11-30', 31);
+
+  print('your atual age is: ${pessoa.calculateTheAtualAge(1989, 2021)}');
+  print('your id is: ${pessoa.id_Person}');
+}
