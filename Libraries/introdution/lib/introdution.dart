@@ -29,7 +29,7 @@ class Student implements Person {
   String toString() => ' $this.id $name $nationality $course';
 }
 
-class Vanilson extends Student implements Person {
+class Vanilson extends Student {
   String name;
   String nationality;
 
