@@ -1,5 +1,8 @@
-int calculate() {
-  return 6 * 7;
+import 'package:introdution/Utills.dart';
+
+String calculate() {
+  var result = addNumber(23, 6);
+  return 'the result is :$result';
 }
 
 abstract class Person {
@@ -38,4 +41,15 @@ class Vanilson extends Student {
 
   @override
   String toString() => 'Vanilson(name: $name, nationality: $nationality)';
+}
+
+// creat list of objects generics
+listNamesStudentes() {
+  var listStudent = <String>[];
+  listStudent.add('Vanilson muhongo');
+  listStudent.add('Fabio rui');
+
+  for (var i = 0; i < listStudent.length; i++) {
+    print('Index $i contains ${listStudent[i]} ');
+  }
 }
